@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Your Name</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Space+Grotesk:wght@300;400;500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=Unbounded:wght@400;700;900&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-name">Artea.</div>
+  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+  <div class="loader-pct" id="lpct">Loading...</div>
+</div>
+
+<!-- CURSOR -->
+<div id="cur"></div>
+<div id="cur-trail"></div>
+<div id="cur-label">View ↗</div>
+
+<!-- SECTION DOTS -->
+<div id="nav-dots">
+  <div class="ndot active" data-sec="hero" title="Home"></div>
+  <div class="ndot" data-sec="about" title="About"></div>
+  <div class="ndot" data-sec="exp" title="Experience"></div>
+  <div class="ndot" data-sec="skills" title="Skills"></div>
+  <div class="ndot" data-sec="contact" title="Contact"></div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nl"><span class="nl-dot"></span>ART · Portfolio</a>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#exp">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-avail"><span class="nav-avail-dot"></span>Open to work</div>
+</nav>
+
+<!-- ═══════ HERO ═══════ -->
+<section id="hero">
+  <canvas id="hcanvas"></canvas>
+  <div class="hleft">
+    <p class="h-eye">Undergrad Student · Interested in Everything · Based in Taylor University</p>
+    <div class="h-name-wrap"><span class="h-first">ARTHA's</span></div>
+    <div class="h-name-wrap"><span class="h-last">Lab</span></div>
+    <div class="h-rule"></div>
+    <div class="h-role" aria-label="Designer, Creator, Storyteller, Editor, Artist">
+      <div class="rw">
+        <span>DESIGN</span>
+        <span>WEBSITE</span>
+        <span>DATA SCI</span>
+        <span>LANGUAGES</span>
+        <span>MUSICS</span>
+      </div>
+    </div>
+    <p class="h-desc">Turning ideas into real visual that can help people. Work that <em>feels</em> as good as it looks.</p>
+    <div class="h-mini-stats">
+      <div class="hms"><span class="hms-num" id="c1">0</span><span class="hms-lbl">Projects</span></div>
+      <div class="hms"><span class="hms-num" id="c2">0</span><span class="hms-lbl">Clients</span></div>
+      <div class="hms"><span class="hms-num" id="c3">0</span><span class="hms-lbl">Years</span></div>
+    </div>
+    <div class="h-ctas">
+      <a href="#exp" class="h-cta-main">View My Journey <span class="ar">→</span></a>
+      <a href="#contact" class="h-cta-sec">Let's Talk</a>
+    </div>
+  </div>
+  <div class="hright">
+    <div class="hbl">Y</div>
+    <div class="hright-inner">
+      <img class="hs hs1" src="assets/shapes/shape-01.png" alt="" aria-hidden="true">
+      <img class="hs hs2" src="assets/shapes/shape-05.png" alt="" aria-hidden="true">
+      <img class="hs hs3" src="assets/shapes/shape-09.png" alt="" aria-hidden="true">
+      <img class="hs hs4" src="assets/shapes/shape-04.png" alt="" aria-hidden="true">
+      <img class="hs hs5" src="assets/shapes/shape-05.png" alt="" aria-hidden="true">
+      <img class="hs hs6" src="assets/shapes/shape-02.png" alt="" aria-hidden="true">
+      <img class="hs hs7" src="assets/shapes/shape-03.png" alt="" aria-hidden="true">
+      <img class="hs hs8" src="assets/shapes/shape-06.png" alt="" aria-hidden="true">
+      <img class="hs hs9" src="assets/shapes/shape-03.png" alt="" aria-hidden="true">
+      <img class="hs hs10" src="assets/shapes/shape-02.png" alt="" aria-hidden="true">
+      <img class="hs hs11" src="assets/shapes/shape-07.png" alt="" aria-hidden="true">
+      <img class="hs hs12" src="assets/shapes/shape-05.png" alt="" aria-hidden="true">
+      <img class="hs hs13" src="assets/shapes/shape-09.png" alt="" aria-hidden="true">
+      <img class="hs hs14" src="assets/shapes/shape-08.png" alt="" aria-hidden="true">
+      <img class="hs hs15" src="assets/shapes/shape-04.png" alt="" aria-hidden="true">
+    </div>
+  </div>
+  <div class="h-vtxt">Visual Thinking · Creative Direction · Intentional Design</div>
+  <div class="h-scroll"><div class="sline"></div><span class="stxt">Scroll to explore</span></div>
+  <div class="tick-wrap">
+    <div class="tick">
+  <span>UI/UX Design</span><span class="c">◆</span>
+  <span>Graphic Design</span><span class="c">◆</span>
+  <span>Data Science</span><span class="c">◆</span>
+  <span>Piano</span><span class="c">◆</span>
+  <span>Stocks</span><span class="c">◆</span>
+  <span>Mandarin</span><span class="c">◆</span>
+  <span>Japanese</span><span class="c">◆</span>
+  <span>PowerPoint</span><span class="c">◆</span>
+
+  <span>UI/UX Design</span><span class="c">◆</span>
+  <span>Graphic Design</span><span class="c">◆</span>
+  <span>Data Science</span><span class="c">◆</span>
+  <span>Piano</span><span class="c">◆</span>
+  <span>Stocks</span><span class="c">◆</span>
+  <span>Mandarin</span><span class="c">◆</span>
+  <span>Japanese</span><span class="c">◆</span>
+  <span>PowerPoint</span><span class="c">◆</span>
+</div>
+  </div>
+</section>
+
+<!-- ═══════ MARQUEE ═══════ -->
+<div class="mq" aria-hidden="true">
+  <div class="mq-inner">
+    <span>Design is thinking made visual</span><span class="ms">&nbsp;/&nbsp;</span>
+    <span>Details are never small</span><span class="ms">&nbsp;/&nbsp;</span>
+    <span>Curiosity fuels creation</span><span class="ms">&nbsp;/&nbsp;</span>
+    <span>Aesthetics with purpose</span><span class="ms">&nbsp;/&nbsp;</span>
+    <span>Design is thinking made visual</span><span class="ms">&nbsp;/&nbsp;</span>
+    <span>Details are never small</span><span class="ms">&nbsp;/&nbsp;</span>
+    <span>Curiosity fuels creation</span><span class="ms">&nbsp;/&nbsp;</span>
+    <span>Aesthetics with purpose</span><span class="ms">&nbsp;/&nbsp;</span>
+  </div>
+</div>
+
+<!-- ═══════ ABOUT ═══════ -->
+<section id="about">
+  <div class="ag">
+    <div class="atxt">
+      <p class="slbl reveal"><span class="n">01 —</span>&nbsp;Who Am I</p>
+      <div class="ah reveal" id="about-heading"><span id="tw-text"></span><span class="twc"></span></div>
+      <p class="ai reveal" id="about-desc">
+        <span class="w">Hi</span> <span class="w">—</span> <span class="w">I'm</span> <span class="w">Artha</span> <span class="w">SP,</span> <span class="w">an</span> <span class="w">undergrad</span> <span class="w">student</span> <span class="w">and</span> <span class="w">enthusiast</span> <span class="w">person</span> <span class="w">currently</span> <span class="w">in</span> <span class="w">Kuala lumpur.</span><br><br>
+        <span class="w">I</span> <span class="w">believe</span> <span class="w">that</span> <em class="w">great</em> <em class="w">design</em> <span class="w">lives</span> <span class="w">in</span> <span class="w">the</span> <span class="w">feeling</span> <span class="w">it</span> <span class="w">creates</span> <span class="w">—</span> <span class="w">the</span> <span class="w">moment</span> <span class="w">someone</span> <span class="w">pauses</span> <span class="w">mid-scroll</span> <span class="w" > because </span > <span class="w" > something </span> <span class="w" > just </span> <span class="w" > hit </span > <span class="w" > right. </span > <span class="w" > I </span > <span class="w" > build </span > <span class="w" > those </span > <span class="w" > moments, </span > <span class="w" > one </span > <span class="w" > pixel </span > <span	class = " w "	>
+      </p>
+      <div class="atags reveal">
+        <span class="atag">Website</span><span class="atag">Data Sci</span><span class="atag">UI/UX</span>
+        <span class="atag">Graphic design</span><span class="atag">Social Media</span><span class="atag">Piano</span>
+        <span class="atag">Mandarin</span><span class="atag">Japanese</span><span class="atag">Stocks</span>
+      </div>
+    </div>
+    <div class="avis">
+      <div class="apf">
+        <img src="assets/dc1.jpg" alt="Portrait">
+      </div>
+      <img class="af af1" src="assets/shapes/shape-01.png" alt="" aria-hidden="true">
+      <img class="af af2" src="assets/shapes/shape-05.png" alt="" aria-hidden="true">
+      <div class="af af3">ART</div>
+      <img class="af af4" src="assets/shapes/shape-07.png" alt="" aria-hidden="true">
+    </div>
+  </div>
+  <div class="astats reveal" id="stats-row">
+    <div class="sc"><span class="sn"><span class="sn-slot" id="slot0"><span class="sn-slot-inner"><span>1</span></span></span><span class="u">+</span></span><div class="sl">Years Active</div></div>
+    <div class="sc"><span class="sn"><span class="sn-slot" id="slot1"><span class="sn-slot-inner"><span>1</span></span></span><span class="u">+</span></span><div class="sl">Projects Done</div></div>
+    <div class="sc"><span class="sn"><span class="sn-slot" id="slot2"><span class="sn-slot-inner"><span>1</span></span></span><span class="u">+</span></span><div class="sl">Clients</div></div>
+    <div class="sc"><span class="sn">∞</span><div class="sl">Creative Ideas</div></div>
+  </div>
+</section>
+
+<!-- ═══════ EXPERIENCE — Desktop UI ═══════ -->
+<section id="exp">
+  <p class="desk-label"><span class="n">02 —</span>&nbsp;Journey</p>
+  <div class="desk-nav">
+    <span>education</span>
+    <span>experiences</span>
+    <span>life moments</span>
+  </div>
+
+  <div class="desk-canvas">
+
+    <!-- Center hero -->
+    <div class="desk-hero">
+      <div class="desk-center-stack">
+        <img class="desk-folder-lg" src="assets/folder.png" alt="">
+        <div class="desk-title-wrap">
+          <span class="desk-script">education</span>
+          <span class="desk-bold"><span class="sel-wrap"><span class="sel-bg"></span><span class="sel-txt">and life</span></span></span>
+        </div>
+        <div class="desk-square-bg" aria-hidden="true"></div>
+        <span class="desk-year">(2025)</span>
+      </div>
+    </div>
+
+    <!-- 3 folders -->
+    <div class="desk-folder df-school fs-md" data-card="school" data-date="2015 — 2019" data-title="High School — [School Name]" data-desc="Built my creative foundation through art classes, design competitions, and leading the school's visual media club." data-img="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&amp;h=280&amp;fit=crop">
+      <img src="assets/folder.png" alt="school"><span>school</span>
+    </div>
+    <div class="desk-folder df-uni fs-lg" data-card="university" data-date="2020 — Present" data-title="Bachelor of Graphic Design" data-desc="Specializing in visual communication, branding &amp; digital media. Thesis on generative typography won the Dean's Award." data-img="https://images.unsplash.com/photo-1562774053-701939374585?w=400&amp;h=280&amp;fit=crop">
+      <img src="assets/folder.png" alt="university"><span>university</span>
+    </div>
+    <div class="desk-folder df-porto fs-sm" data-card="porto" data-date="2023 — Active" data-title="Portfolio &amp; Freelance Work" data-desc="12+ independent clients across branding, social media, and editorial design — building my portfolio while studying." data-img="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&amp;h=280&amp;fit=crop">
+      <img src="assets/folder.png" alt="porto"><span>porto</span>
+    </div>
+
+    <!-- Apps -->
+    <div class="desk-app da-canva" title="Canva"><span class="app-fallback" style="background:linear-gradient(135deg,#00C4CC,#7D2AE8)">Ca</span></div>
+    <div class="desk-app da-vscode" title="VS Code"><span class="app-fallback" style="background:#007ACC;font-size:.7rem">&lt;/&gt;</span></div>
+    <div class="desk-app da-gdocs" title="Google Docs"><span class="app-fallback" style="background:#4285F4;font-size:.65rem">Doc</span></div>
+
+    <!-- Image files -->
+    <div class="desk-file f-img1 fsz-l" data-date="2024" data-title="Echonvention Businesss Plan Competition Finalist" data-desc="Finalist in the Business Plan Competition (BPC) at Prasetiya Mulya University, developing and presenting innovative business ideas as part of a team.">
+      <div class="desk-file-thumb"><img src="assets/porto.jpg" alt=""></div>
+      <span class="desk-file-name">BPC_jkt.jpeg</span>
+    </div>
+    <div class="desk-file f-img2 fsz-s" data-date="2024" data-title="Edutrip" data-desc="Participated in a study tour to Singapore, exploring university campuses and academic environments while building international connections.">
+      <div class="desk-file-thumb"><img src="assets/studytour.jpg" alt=""></div>
+      <span class="desk-file-name">uni_trips.jpeg</span>
+    </div>
+    <div class="desk-file f-img3 fsz-xl" data-date="2024-2025" data-title="Member of the Student Council's Illustration Division, collaborating on an animation project for the Vesak Day celebration and enhancing creativity, teamwork, and digital design skills.">
+      <div class="desk-file-thumb"><img src="assets/osis.jpg" alt=""></div>
+      <span class="desk-file-name">student_council.jpeg</span>
+    </div>
+    <div class="desk-file f-img4 fsz-m" data-date="2026" data-title="University Life" data-desc="currently locked">
+      <div class="desk-file-thumb"><img src="assets/load1.jpg" alt=""></div>
+      <span class="desk-file-name">uni_life.jpeg</span>
+    </div>
+  </div>
+
+  <!-- Messenger carousel (folders + experiences) -->
+  <div class="msg-overlay" id="msg-overlay" aria-hidden="true">
+    <button class="msg-carousel-close" id="msg-close" aria-label="Close">×</button>
+    <div class="msg-carousel-wrap">
+      <p class="msg-carousel-hint">← scroll to explore →</p>
+      <div class="msg-carousel-fade msg-carousel-fade-l"></div>
+      <div class="msg-carousel-fade msg-carousel-fade-r"></div>
+      <div class="msg-carousel" id="msg-carousel">
+        <article class="msg-card" data-card="school">
+          <img class="msg-img" src="assets/jhs.jpg" alt="">
+          <div class="msg-body">
+            <div class="msg-date">2020 — 2023</div>
+            <div class="msg-title">Junior High School — Ignatius Global School</div>
+            <div class="msg-desc">During this period, I studied mathematics, science, English, and social studies while participating in extracurricular and foreign language activities.</div>
+          </div>
+        </article>
+        <article class="msg-card" data-card="school">
+          <img class="msg-img" src="assets/shs.jpg" alt="">
+          <div class="msg-body">
+            <div class="msg-date">2023 — 2026</div>
+            <div class="msg-title">Senior High School — Ignatius Global School</div>
+            <div class="msg-desc">Throughout senior high school, I participated in an international program that emphasized foreign language development and intensive preparation for the SAT and Advanced Placement (AP) examinations, strengthening both my academic foundation and global perspective.</div>
+          </div>
+        </article>
+        <article class="msg-card" data-card="school">
+          <img class="msg-img" src="assets/porto.jpg" alt="">
+          <div class="msg-body">
+            <div class="msg-date">2024</div>
+            <div class="msg-title">BPC Finalist</div>
+            <div class="msg-desc">I was a finalist in the Business Plan Competition (BPC) organized by Prasetiya Mulya University, where I developed and presented innovative business ideas as part of a competitive team.</div>
+          </div>
+        </article>
+        <article class="msg-card" data-card="school">
+          <img class="msg-img" src="assets/osis.jpg" alt="">
+           <div class="msg-body">
+            <div class="msg-date">2024-2025</div>
+            <div class="msg-title">Part of Student Council</div>
+            <div class="msg-desc">I was part of the student council's Illustration Division, I collaborated with my team to create an animation for the Vesak Day celebration, which strengthened my creativity, teamwork, and digital design skills.</div>
+          </div>
+        </article>
+        <article class="msg-card" data-card="school">
+          <img class="msg-img" src="assets/studytour.jpg" alt="">
+           <div class="msg-body">
+            <div class="msg-date">2024</div>
+            <div class="msg-title">Study Tour</div>
+            <div class="msg-desc">I participated in a study tour to Singapore to visit several universities, gaining insights into their academic programs, teaching methods, and campus life. I also made some new friends throughout the tour.</div>
+          </div>
+        </article>
+        <article class="msg-card" data-card="school">
+          <img class="msg-img" src="assets/eng.jpg" alt="">
+           <div class="msg-body">
+            <div class="msg-date">2024-2025</div>
+            <div class="msg-title">English Club — Member</div>
+            <div class="msg-desc">Being part of the English Club allowed me to expand my social network, develop my communication skills, and improve my English through discussions, collaborative activities, and regular practice.</div>
+          </div>
+        </article>
+        <article class="msg-card" data-card="school">
+          <img class="msg-img" src="assets/band.jpg" alt="">
+           <div class="msg-body">
+            <div class="msg-date">2023-2024</div>
+            <div class="msg-title">Band Club — Member </div>
+            <div class="msg-desc">Being part of the school band club allowed me to perform at several school events while building strong teamwork, communication, and camaraderie with other members.</div>
+          </div>
+        </article>
+        <article class="msg-card" data-card="university">
+          <img class="msg-img" src="assets/taylor.jpg" alt="">
+          <div class="msg-body">
+            <div class="msg-date">2026-Now</div>
+            <div class="msg-title">Taylor's life</div>
+            <div class="msg-desc">Hi, I'm a Computer Science undergraduate at Taylor's University specializing in Data Science. I am passionate about building innovative software solutions and uncovering insights from data. With interests spanning software engineering, machine learning, and data analytics, I enjoy creating technology that solves real-world problems and drives meaningful impact.</div>
+          </div>
+        </article>
+        <article class="msg-card" data-card="porto">
+          <img class="msg-img" src="assets/mandarin.jpg" alt="">
+          <div class="msg-body">
+            <div class="msg-date">2 Years / basic / HSK3</div>
+            <div class="msg-title">Mandarin</div>
+            <div class="msg-desc">Currently studying Mandarin Chinese with HSK Level 3 proficiency, demonstrating a commitment to continuous learning, cross-cultural communication, and personal growth.</div>
+          </div>
+        </article>
+        <article class="msg-card" data-card="porto">
+          <img class="msg-img" src="assets/japanese.jpg" alt="">
+          <div class="msg-body">
+            <div class="msg-date">3+ Years / intermediate / N3</div>
+            <div class="msg-title">Japanese</div>
+            <div class="msg-desc">I am actively learning Japanese and am currently at JLPT N3 proficiency. I am passionate about language learning and continuously work to improve my communication skills while gaining a deeper understanding of Japanese culture.</div>
+          </div>
+        </article>
+        <article class="msg-card" data-card="porto">
+          <img class="msg-img" src="assets/piano.jpg" alt="">
+          <div class="msg-body">
+            <div class="msg-date">9+ Years / Grade 7</div>
+            <div class="msg-title">Piano</div>
+            <div class="msg-desc">I have been playing the piano for over 9 years and have achieved Grade 7 Yamaha examination. I am dedicated to continuous improvement and enjoy performing a wide range of musical pieces.</div>
+          </div>
+        </article>
+        <article class="msg-card" data-card="porto">
+          <img class="msg-img" src="assets/design.jpg" alt="">
+          <div class="msg-body">
+            <div class="msg-date">3 Years</div>
+            <div class="msg-title">Design</div>
+            <div class="msg-desc">I have been involved in graphic design since senior high school, creating designs for both individual and collaborative projects. In addition to academic work, I often design in my spare time as a way to express creativity and further develop my visual design skills.</div>
+          </div>
+        </article>
+        <article class="msg-card" data-card="porto">
+          <img class="msg-img" src="assets/data sci.jpg" alt="">
+          <div class="msg-body">
+            <div class="msg-date">2+ Months</div>
+            <div class="msg-title">Data Sci</div>
+            <div class="msg-desc">Currently studying Data Science, focusing on machine learning algorithms and statistical analysis to extract meaningful insights from complex datasets.</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- Context menu (images) -->
+  <div class="ctx-backdrop" id="ctx-backdrop"></div>
+  <div class="ctx-menu" id="ctx-menu" role="menu" aria-hidden="true">
+    <div class="ctx-item"><span class="ctx-lbl">Date</span><span class="ctx-val" id="ctx-date"></span><span class="ctx-icon">📅</span></div>
+    <div class="ctx-item"><span class="ctx-lbl">Title</span><span class="ctx-val" id="ctx-title"></span><span class="ctx-icon">✎</span></div>
+    <div class="ctx-item"><span class="ctx-lbl">Description</span><span class="ctx-val" id="ctx-desc"></span><span class="ctx-icon">≡</span></div>
+  </div>
+</section>
+
+<!-- ═══════ SKILLS ═══════ -->
+<section id="skills">
+  <div class="skg">
+    <div>
+      <p class="slbl reveal"><span class="n" style="color:var(--lime)">03 —</span>&nbsp;Skills &amp; Tools</p>
+      <div class="ah reveal" style="color:var(--white)" id="sk-heading"><span id="sk-tw"></span><span class="twc" style="background:var(--lime)"></span></div>
+      <p class="ai reveal" style="color:#4a4a4a;margin-bottom:2.5rem">Tools are just tools — <em style="color:var(--lime)">consistency</em> is what makes them powerful. Here's how I work.</p>
+      <div class="reveal">
+        <div class="skbar-item"><div class="skbar-top"><span class="skbar-name">Website Developing</span><span class="skbar-pct" style="color:var(--lime)">83%</span></div><div class="skbar-track"><div class="skbar-fill" data-w="83" style="background:var(--lime)"></div></div></div>
+        <div class="skbar-item"><div class="skbar-top"><span class="skbar-name">Computer Sci / Data Sci (in progress)</span><span class="skbar-pct" style="color:var(--pink)">50%</span></div><div class="skbar-track"><div class="skbar-fill" data-w="50" style="background:var(--pink)"></div></div></div>
+        <div class="skbar-item"><div class="skbar-top"><span class="skbar-name">Design</span><span class="skbar-pct" style="color:var(--blue)">87%</span></div><div class="skbar-track"><div class="skbar-fill" data-w="87" style="background:var(--blue)"></div></div></div>
+        <div class="skbar-item"><div class="skbar-top"><span class="skbar-name">Mandarin</span><span class="skbar-pct" style="color:var(--gold)">79%</span></div><div class="skbar-track"><div class="skbar-fill" data-w="79" style="background:var(--gold)"></div></div></div>
+        <div class="skbar-item"><div class="skbar-top"><span class="skbar-name">Japanese</span><span class="skbar-pct" style="color:var(--orange)">86%</span></div><div class="skbar-track"><div class="skbar-fill" data-w="86" style="background:var(--orange)"></div></div></div>
+        <div class="skbar-item"><div class="skbar-top"><span class="skbar-name">Office Software</span><span class="skbar-pct" style="color:var(--purple)">75%</span></div><div class="skbar-track"><div class="skbar-fill" data-w="75" style="background:var(--purple)"></div></div></div>
+      </div>
+    </div>
+    <div><div class="sksc reveal" id="sksc"></div></div>
+  </div>
+  <!-- Vertical label -->
+  <div style="position:absolute;left:1.2rem;top:50%;transform:translateY(-50%) rotate(180deg);writing-mode:vertical-lr;font-family:var(--mono);font-size:.48rem;letter-spacing:.28em;text-transform:uppercase;color:#252525">Tools ◆ Craft ◆ Vision ◆ Execution</div>
+</section>
+
+<!-- ═══════ CONTACT ═══════ -->
+<section id="contact">
+  <div class="cl">
+    <div style="position:relative">
+      <!-- Vertical deco left edge -->
+      <div style="position:absolute;left:-2rem;top:0;bottom:0;display:flex;align-items:center">
+        <span style="writing-mode:vertical-lr;transform:rotate(180deg);font-family:var(--mono);font-size:.44rem;letter-spacing:.3em;text-transform:uppercase;color:rgba(0,0,0,.1);white-space:nowrap">GET IN TOUCH · LET'S BUILD · MAKE IT HAPPEN</span>
+      </div>
+      <p class="slbl reveal"><span class="n" style="color:var(--orange)">04 —</span>&nbsp;Let's Connect</p>
+      <h2 class="cbig reveal">
+        <span class="cbig-line">Let's make</span>
+        <strong class="cbig-strong">something.</strong>
+      </h2>
+      <a href="mailto:hello@yourname.com" class="cemail reveal">arthasuryapratama46@gmail.com</a>
+      <div class="csoc reveal">
+        <a class="csl" href="https://www.instagram.com/artha_5p/?hl=en">Instagram</a>
+        <a class="csl" href="https://www.linkedin.com/in/artha-surya-pratama-245605312/">Linkedin</a>
+        <a class="csl" href="https://github.com/ArthaX2">GitHub</a>
+        <a class="csl" href="https://line.me/ti/p/R9f8fOXYbl">Line</a>
+      </div>
+    </div>
+    <div class="cright">
+      <div class="cbgtxt">HI.</div>
+      <div class="ccard">
+        <div class="cclbl">Currently available for</div>
+        <div class="cctxt">Any projects, creative collaborations &amp; part-time roles.</div>
+      </div>
+      <img class="cs1" src="assets/shapes/shape-01.png" alt="" aria-hidden="true">
+      <img class="cs2" src="assets/shapes/shape-07.png" alt="" aria-hidden="true">
+      <img class="cs3" src="assets/shapes/shape-09.png" alt="" aria-hidden="true">
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <!-- Scrolling ghost bg text -->
+  <div class="footer-bg-wrap" aria-hidden="true">
+    <div class="footer-bg-track">
+      <div class="footer-bg">
+        ART'S LAB · ART'S LAB · ART'S LAB · ART'S LAB
+      </div>
+      <div class="footer-bg">
+        ART'S LAB · ART'S LAB · ART'S LAB · ART'S LAB
+      </div>
+    </div>
+  </div>
+
+  <!-- Ticker strip -->
+  <div class="footer-ticker" aria-hidden="true">
+    <div class="footer-ticker-inner">
+      <span class="ft-accent">Artha SP</span><span>·</span>
+      <span>Design</span><span>·</span>
+      <span>Web Dev</span><span>·</span>
+      <span>Data Sci</span><span>·</span>
+      <span>Piano</span><span>·</span>
+      <span>Mandarin</span><span>·</span>
+      <span>Japanese</span><span>·</span>
+      <span class="ft-accent">Open to Work</span><span>·</span>
+
+      <span>Artha SP</span><span>·</span>
+      <span>Design</span><span>·</span>
+      <span>Web Dev</span><span>·</span>
+      <span>Data Sci</span><span>·</span>
+      <span>Piano</span><span>·</span>
+      <span>Mandarin</span><span>·</span>
+      <span>Japanese</span><span>·</span>
+      <span class="ft-accent">Open to Work</span><span>·</span>
+    </div>
+  </div>
+
+  <!-- Main grid -->
+  <div class="footer-body">
+
+    <!-- Brand column -->
+    <div class="footer-brand-col">
+      <span class="footer-brand">ART'S <em>Lab</em></span>
+      <p class="footer-tagline">
+        Turning ideas into real visual that feels as good as it looks.
+      </p>
+
+      <div class="footer-pill">
+        <span class="footer-pill-dot"></span>
+        Open to work
+      </div>
+    </div>
+
+    <!-- Navigate -->
+    <div class="footer-col">
+      <div class="footer-col-label">Navigate</div>
+      <ul class="footer-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#exp">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-col">
+      <div class="footer-col-label">Social</div>
+      <ul class="footer-list">
+        <li>
+          <a href="https://www.instagram.com/artha_5p/?hl=en"
+             target="_blank" rel="noopener">Instagram</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/artha-surya-pratama-245605312/"
+             target="_blank" rel="noopener">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://github.com/ArthaX2"
+             target="_blank" rel="noopener">GitHub</a>
+        </li>
+        <li>
+          <a href="https://line.me/ti/p/R9f8fOXYbl"
+             target="_blank" rel="noopener">Line</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <div class="footer-col-label">Get in Touch</div>
+      <ul class="footer-list">
+        <li>
+          <a href="mailto:arthasuryapratama46@gmail.com">
+            Email me
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/artha-surya-pratama-245605312/"
+             target="_blank" rel="noopener">
+            DM on LinkedIn
+          </a>
+        </li>
+      </ul>
+
+      <div style="
+        margin-top:.8rem;
+        font-family:var(--mono);
+        font-size:.52rem;
+        letter-spacing:.12em;
+        text-transform:uppercase;
+        color:rgba(255,255,255,.2)">
+        Based in Kuala Lumpur
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="footer-bottom">
+    <span class="footer-copy">
+      © 2025 Artha SP — All rights reserved
+    </span>
+
+    <span class="footer-note">
+      Bright ideas with a modern edge.
+    </span>
+
+    <button class="footer-back-top"
+      onclick="window.scrollTo({top:0,behavior:'smooth'})">
+      Back to top ↑
+    </button>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
