@@ -848,7 +848,7 @@ footer > *{position:relative;z-index:1}
   gap:1rem;
   white-space:nowrap;
   width:max-content;
-  animation:footer-ticker 18s linear infinite;
+  animation:footer-ticker 28s linear infinite;
 }
 .footer-ticker-inner span{
   font-family:var(--mono);
@@ -961,8 +961,8 @@ footer .footer-note{
 
 /* Large animated brand background */
 .footer-bg-wrap{position:absolute;left:0;right:0;top:50%;height:100%;pointer-events:none;display:flex;align-items:center;z-index:0;overflow:hidden}
-.footer-bg-track{display:flex;gap:6rem;align-items:center;min-width:200%;will-change:transform;animation:footer-bmove 10s linear infinite}
-.footer-bg{font-family:var(--display);font-weight:900;font-size:clamp(12rem,32vw,520px);-webkit-text-fill-color:#3c60ff;color:#ffffff;opacity:1;white-space:nowrap;display:inline-block;transform:translateY(-50%);will-change:transform;mix-blend-mode:normal;text-shadow:none;letter-spacing:-0.02em}
+.footer-bg-track{display:flex;align-items:center;width:max-content;min-width:max-content;will-change:transform;animation:footer-bmove 54s linear infinite}
+.footer-bg{font-family:var(--display);font-weight:900;font-size:clamp(12rem,32vw,520px);-webkit-text-fill-color:#3c60ff;color:#ffffff;opacity:1;white-space:nowrap;display:inline-block;flex-shrink:0;padding-right:clamp(1.4rem,3vw,3rem);transform:translateY(-50%);will-change:transform;mix-blend-mode:normal;text-shadow:none;letter-spacing:-0.02em}
 @keyframes footer-bmove{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
 .footer-bottom{
